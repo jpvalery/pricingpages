@@ -1,14 +1,14 @@
 {
-  "name": "gatsby-tutorial-starter",
-  "author": "Justin Formentin",
-  "title": "Gatsby V2 Tutorial Starter",
-  "description": "My Blog",
-  "homepage": "https://gatsby-tutorial-starter.netlify.com",
+  "name": "bestpricingpages",
+  "author": "Jp Valery",
+  "title": "BestPricingPages",
+  "description": "A repository of the best pricing pages out there.",
+  "homepage": "https://bestpricingpages.com",
   "license": "MIT",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/justinformentin/gatsby-v2-tutorial-starter"
+    "url": "https://github.com/jpvalery/pricingpages"
   },
   "scripts": {
     "develop": "gatsby develop",
@@ -23,24 +23,27 @@
   },
   "dependencies": {
     "@babel/core": "^7.2.2",
-    "babel-plugin-emotion": "^10.0.6",
     "@emotion/core": "^10.0.6",
     "@emotion/styled": "^10.0.6",
+    "babel-plugin-emotion": "^10.0.6",
     "emotion-theming": "^10.0.6",
-    "gatsby": "^2.0.91",
+    "gatsby": "^2.3.30",
     "gatsby-image": "^2.0.26",
+    "gatsby-plugin-advanced-sitemap": "^1.0.4",
     "gatsby-plugin-catch-links": "^2.0.9",
     "gatsby-plugin-emotion": "^4.0.1",
     "gatsby-plugin-google-analytics": "^2.0.9",
     "gatsby-plugin-manifest": "^2.0.13",
-    "gatsby-plugin-offline": "^2.0.21",
+    "gatsby-plugin-netlify": "^2.0.15",
+    "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.5",
-    "gatsby-plugin-sharp": "^2.0.17",
+    "gatsby-plugin-robots-txt": "^1.4.0",
+    "gatsby-plugin-sharp": "^2.0.35",
     "gatsby-plugin-sitemap": "^2.0.4",
     "gatsby-plugin-typography": "^2.2.5",
     "gatsby-remark-images": "^3.0.1",
     "gatsby-remark-prismjs": "^3.2.0",
-    "gatsby-source-filesystem": "^2.0.13",
+    "gatsby-source-filesystem": "^2.0.32",
     "gatsby-transformer-remark": "^2.2.0",
     "gatsby-transformer-sharp": "^2.1.10",
     "prismjs": "^1.15.0",
@@ -66,10 +69,10 @@
     "prettier": "^1.15.3"
   },
   "keywords": [
-    "justin formentin",
-    "personal blog",
-    "tutorial",
+    "jpvalery",
+    "BPP",
+    "RGE",
     "gatsby",
-    "emotion"
+    "repository"
   ]
 }

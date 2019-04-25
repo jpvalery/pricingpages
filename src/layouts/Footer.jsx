@@ -10,7 +10,8 @@ const Wrapper = styled.footer`
   font-family: ${props => props.theme.fontFamily.body};
   font-weight: 500;
   @media (max-width: ${props => props.theme.breakpoints.s}) {
-    padding-top: 7rem;
+    padding-top: 1rem;
+    font-size: 12px;
   }
 `;
 
@@ -19,15 +20,23 @@ const Text = styled.div`
   padding-bottom: 2rem;
   text-align: center;
   color: ${props => props.theme.colors.white.light};
+  span {
+    color: ${props => props.theme.colors.highlight};
+  }
+  a {
+    text-decoration:none !important;
+    color: ${props => props.theme.colors.white.light};
+  }
 `;
 
 const Footer = () => (
   <Wrapper>
     <Text>
       <span>
-        Gatsby Tutorial Starter -{' '}
-        <a href="https://justinformentin.com">Justin Formentin</a>
+        BestPricingPages.com - A repository of the best pricing pages
       </span>
+       &nbsp;|&nbsp;
+      <a href="https://jpvalery.me">Curated by @jpvalery</a>
     </Text>
   </Wrapper>
 );

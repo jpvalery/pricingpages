@@ -15,9 +15,9 @@ const headroom = css`
     width: 100%;
     padding: 1rem 1.5rem;
     svg {
-      height: 2.5rem;
+      height: 1.5rem;
       g {
-        fill: ${theme.colors.white.base};
+        fill: ${theme.colors.background.dark};
       }
     }
   }
@@ -38,17 +38,17 @@ const headroom = css`
     position: fixed;
     transform: translateY(0);
     transition: ${theme.transitions.headroom.transition};
-    background-color: ${theme.colors.white.light};
+    background-color: ${theme.colors.background.dark};
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
     nav {
       a {
-        color: ${theme.colors.black.base};
+        color: ${theme.colors.white.base};
         &:hover {
           border-color: ${theme.colors.black.base};
-          color: ${theme.colors.black.base};
+          color: ${theme.colors.highlight};
         }
         &:focus {
-          color: ${theme.colors.black.base};
+          color: ${theme.colors.white.base};
         }
       }
     }

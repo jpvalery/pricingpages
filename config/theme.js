@@ -3,12 +3,12 @@ export const colors = {
     base: '#fff',
     light: '#f0f0f0',
     grey: '#cecece',
-    dark: '#a0afd7',
+    dark: '#96a8b2',
   },
   black: {
     base: '#333438',
-    light: '#4b4e57',
-    blue: '#2e3246',
+    light: '#4d5d6c',
+    blue: '#002d42',
   },
   primary: {
     base: '#3498db',
@@ -16,9 +16,10 @@ export const colors = {
     dark: '#284187',
   },
   background: {
-    light: '#3e5fbc',
-    dark: '#284187',
+    light: '#26374a',
+    dark: '#002D42',
   },
+  highlight: '#fec04f',
 };
 
 export const shadow = {
@@ -77,7 +78,7 @@ export const theme = {
     big: '83.33333rem',
   },
   borderRadius: {
-    default: '0.4rem',
+    default: '1rem',
     round: '100rem',
   },
   transitions: {

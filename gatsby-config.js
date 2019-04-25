@@ -46,7 +46,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sharp',
-    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -61,5 +60,15 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    'gatsby-plugin-netlify',
+    'gatsby-plugin-advanced-sitemap',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: config.siteUrl,
+        sitemap:`${config.siteUrl}/sitemap.xml`,
+        policy: [{ userAgent: '*' }],
+      },
+    },
   ],
 };

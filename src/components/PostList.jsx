@@ -12,10 +12,10 @@ const Wrapper = styled.article`
   border-radius: ${props => props.theme.borderRadius.default};
   box-shadow: ${props => props.theme.shadow.feature.small.default};
   transition: ${props => props.theme.transitions.boom.transition};
-  height: 17rem;
-  flex-basis: calc(99.9% * 1 / 3 - 2.5rem);
-  max-width: calc(99.9% * 1 / 3 - 2.5rem);
-  width: calc(99.9% * 1 / 3 - 2.5rem);
+  height: 36rem;
+  flex-basis: calc(99.9% * 1 / 4 - 2.5rem);
+  max-width: calc(99.9% * 1 / 4 - 2.5rem);
+  width: calc(99.9% * 1 / 4 - 2.5rem);
 
   &:hover {
     box-shadow: ${props => props.theme.shadow.feature.small.hover};
@@ -23,17 +23,17 @@ const Wrapper = styled.article`
   }
 
   @media (max-width: 1000px) {
-    flex-basis: calc(99.9% * 1 / 2 - 1rem);
-    max-width: calc(99.9% * 1 / 2 - 1rem);
-    width: calc(99.9% * 1 / 2 - 1rem);
-    height: 18rem;
+    flex-basis: calc(99.9% * 1 / 3 - 1rem);
+    max-width: calc(99.9% * 1 / 3 - 1rem);
+    width: calc(99.9% * 1 / 3 - 1rem);
+    height: 30rem;
   }
 
   @media (max-width: 700px) {
     flex-basis: 100%;
     max-width: 100%;
     width: 100%;
-    height: 15rem;
+    height: 27rem;
   }
 `;
 
@@ -112,7 +112,6 @@ const PostList = ({ cover, path, date, title, excerpt }) => (
     </Image>
     <StyledLink to={path}>
       <Info>
-        <span>{date}</span>
         <Title>{title}</Title>
         <span>{excerpt}</span>
       </Info>

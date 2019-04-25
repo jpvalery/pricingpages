@@ -6,14 +6,11 @@ import { Layout, Container } from 'layouts';
 
 const About = center => (
   <Layout>
-    <Helmet title={'About Page'} />
-    <Header title="About Page">Gatsby Tutorial Starter</Header>
+    <Helmet title={'About BPP'} />
+    <Header title="About BPP">A repository of the best pricing pages out there</Header>
     <Container center={center}>
-      <h3>
-        If you would like to build this site completely from scratch, you can
-        read the guide{' '}
-        <a href="https://justinformentin.com/gatsby-v2-guide">here.</a>
-      </h3>
+      Discussing with colleagues, we felt we could use a <a href="https://reallygoodemails.com/" target="_blank">ReallyGoodEmails</a> but for pricing page.<br />
+      So I decided to build it :). It's a work in progress and I'll update it based on feedback received and needs we'll identify.
     </Container>
   </Layout>
 );

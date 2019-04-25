@@ -10,14 +10,28 @@ const SuggestionBar = styled.div`
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background: ${props => props.theme.colors.white.light};
+  background: ${props => props.theme.colors.white.grey};
   box-shadow: ${props => props.theme.shadow.suggestion};
+  a {
+    color: ${props => props.theme.colors.black.base};
+  }
+  h3{
+    color: ${props => props.theme.colors.black.blue};
+  }
 `;
-const PostSuggestion = styled.div`
+const PostSuggestionPrev = styled.div`
   display: flex;
   align-items: center;
   margin: 1rem 3rem 0 3rem;
+  text-align:left;
 `;
+const PostSuggestionNext = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 1rem 3rem 0 3rem;
+  text-align:right;
+`;
+
 
 const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
@@ -29,7 +43,7 @@ const Post = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO
-        title={title}
+        title={`${title} | BestPricingPages`}
         description={post.frontmatter.description || post.excerpt || ' '}
         image={image}
         pathname={post.frontmatter.path}
@@ -41,22 +55,22 @@ const Post = ({ data, pageContext }) => {
         <TagsBlock list={post.frontmatter.tags || []} />
       </Container>
       <SuggestionBar>
-        <PostSuggestion>
+        <PostSuggestionPrev>
           {prev && (
             <Link to={prev.frontmatter.path}>
-              Previous
+              ⬅️ Previous
               <h3>{prev.frontmatter.title}</h3>
             </Link>
           )}
-        </PostSuggestion>
-        <PostSuggestion>
+        </PostSuggestionPrev>
+        <PostSuggestionNext>
           {next && (
             <Link to={next.frontmatter.path}>
-              Next
+              Next ➡️
               <h3>{next.frontmatter.title}</h3>
             </Link>
           )}
-        </PostSuggestion>
+        </PostSuggestionNext>
       </SuggestionBar>
     </Layout>
   );

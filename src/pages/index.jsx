@@ -11,7 +11,7 @@ const PostWrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 4rem 4rem 1rem 4rem;
+  margin: 4rem;
   @media (max-width: 1000px) {
     margin: 4rem 2rem 1rem 2rem;
   }
@@ -24,8 +24,8 @@ const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Helmet title={'Home Page'} />
-      <Header title="Home Page">Gatsby Tutorial Starter</Header>
+      <Helmet title={'The Best Pricing Pages out there'} />
+      <Header title="The Best Pricing Pages out there"></Header>
       <PostWrapper>
         {edges.map(({ node }) => (
           <PostList
@@ -68,7 +68,6 @@ Index.propTypes = {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      limit: 6
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

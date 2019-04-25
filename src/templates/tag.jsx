@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { Layout, Container } from 'layouts';
 import { Header } from 'components';
+import Img from 'gatsby-image';
 import config from '../../config/site';
+
 
 const StyledLink = styled(Link)`
   color: ${props => props.theme.colors.white.light};
@@ -31,7 +33,7 @@ const Tag = ({ pageContext }) => {
   const upperTag = tagName.charAt(0).toUpperCase() + tagName.slice(1);
   return (
     <Layout>
-      <Helmet title={`${tagName} | ${config.siteTitle}`} />
+      <Helmet title={`${tagName} | BestPricingPages`} />
       <Header title={upperTag}>
         <StyledLink to="/tags">All Tags</StyledLink>
       </Header>
