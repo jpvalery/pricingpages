@@ -35,8 +35,8 @@ const Footer = () => (
       <span>
         BestPricingPages.com - A repository of the best pricing pages
       </span>
-       &nbsp;|&nbsp;
-      <a href="https://jpvalery.me">Curated by @jpvalery</a>
+      <br />
+      <a href="https://jpvalery.me">Curated by @jpvalery</a> - 2019
     </Text>
   </Wrapper>
 );
