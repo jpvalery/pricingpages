@@ -37,6 +37,14 @@ const Text = styled.div`
   padding: 0;
   margin: 1.2rem auto;
   align-items: center;
+  a {
+    text-decoration:none;
+    color: inherit;
+  }
+  a:hover {
+    text-decoration:underline;
+    color: ${props => props.theme.colors.highlight};
+  }
 `;
 
 const Subtitle = styled.p`
@@ -44,12 +52,13 @@ const Subtitle = styled.p`
   color: ${props => props.theme.colors.white.light};
 `;
 
-const Header = ({ children, title, date, cover }) => (
+const Header = ({ children, title, date, cover, url }) => (
   <Wrapper>
     <Img fluid={cover || {} || [] || ''} />
     <Text>
       <h1>{title}</h1>
-      <h3>{date}</h3>
+      <h3><a href={`${url}?utm_source=bestpricingpage&utm_medium=post&utm_campaign=${title}`}>{url}</a></h3>
+      <h4>{date}</h4>
 
       {children && <Subtitle>{children}</Subtitle>}
     </Text>
@@ -62,6 +71,7 @@ Header.propTypes = {
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.bool]),
   cover: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   date: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  url: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   title: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.object,
@@ -74,4 +84,5 @@ Header.defaultProps = {
   cover: false,
   date: false,
   title: false,
+  url: false,
 };

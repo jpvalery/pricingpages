@@ -39,6 +39,7 @@ const Post = ({ data, pageContext }) => {
   const image = post.frontmatter.cover.childImageSharp.fluid;
   const title = post.frontmatter.title;
   const date = post.frontmatter.date;
+  const url = post.frontmatter.url;
   const html = post.html;
   return (
     <Layout>
@@ -49,7 +50,7 @@ const Post = ({ data, pageContext }) => {
         pathname={post.frontmatter.path}
         article
       />
-      <Header title={title} date={date} cover={image} />
+      <Header title={title} date={date} cover={image} url={url} />
       <Container>
         <Content input={html} />
         <TagsBlock list={post.frontmatter.tags || []} />
@@ -94,6 +95,7 @@ export const query = graphql`
         date
         title
         tags
+        url
         cover {
           childImageSharp {
             fluid(

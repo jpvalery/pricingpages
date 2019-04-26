@@ -35,6 +35,7 @@ const NavBar = () => (
     <Nav>
       <Link to="/">Home</Link>
       <Link to="/tags">Categories</Link>
+      <a href="https://jpvalery.typeform.com/to/anlh6W" target="_blank">Submit a page</a>
       <Link to="/about">About</Link>
     </Nav>
   </Headroom>

@@ -10,11 +10,12 @@ const TagsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   a {
-    margin: 0 1rem 1rem 0;
+    margin: 0.8rem;
     color: ${props => props.theme.colors.black.blue};
-    padding: 0.3rem 0.6rem;
+    padding: 0.5rem 1.2rem;
     background: ${props => props.theme.colors.white.grey};
     border-radius: 10px;
+    font-weight:600;
     &:hover {
       color: ${props => props.theme.colors.white.light};
       background: ${props => props.theme.colors.primary.light};
