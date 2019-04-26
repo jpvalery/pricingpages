@@ -8,6 +8,9 @@ const StyledLink = styled(Link)`
   display: flex;
   font-weight: 700;
   align-items: left;
+  @media (max-width: ${props => props.theme.breakpoints.s}) {
+    display:none;
+  }
 `;
 
 const Nav = styled.nav`
