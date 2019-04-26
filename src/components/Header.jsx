@@ -48,7 +48,8 @@ const Text = styled.div`
 `;
 
 const Subtitle = styled.p`
-  max-width: 650px;
+  max-width: 600px;
+  margin: -2rem 2rem 0 2rem;
   color: ${props => props.theme.colors.white.light};
 `;
 
