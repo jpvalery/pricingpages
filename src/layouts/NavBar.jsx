@@ -7,7 +7,7 @@ import logo from '../../static/logo/header-logo.png';
 const StyledLink = styled(Link)`
   display: flex;
   font-weight: 700;
-  align-items: center;
+  align-items: left;
 `;
 
 const Nav = styled.nav`
@@ -17,13 +17,23 @@ const Nav = styled.nav`
   font-weight: 500;
   font-size: 1.1rem;
   align-items: center;
+  margin-bottom: 1rem;
   a {
     color: ${props => props.theme.colors.white.base};
-    margin-left: 2rem;
+    margin-left: 1.8rem;
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
       color: ${props => props.theme.colors.white.grey};
     }
+  }
+  @media (max-width: ${props => props.theme.breakpoints.m}) {
+    font-size: 1rem;
+    line-height: 1em;
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+  @media (max-width: 604px) {
+    font-size:0.7rem;
   }
 `;
 
