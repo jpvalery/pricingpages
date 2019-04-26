@@ -58,7 +58,7 @@ const Header = ({ children, title, date, cover, url }) => (
     <Img fluid={cover || {} || [] || ''} />
     <Text>
       <h1>{title}</h1>
-      <h3><a href={`${url}?utm_source=bestpricingpages&utm_medium=post&utm_campaign=${title}`}>{url}</a></h3>
+      <h3><a href={`${url}?utm_source=bestpricingpages&utm_medium=post&utm_campaign=${title}`} target="_blank">{url}</a></h3>
       <h4>{date}</h4>
 
       {children && <Subtitle>{children}</Subtitle>}
