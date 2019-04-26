@@ -4,8 +4,22 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { Layout, Container, Content } from 'layouts';
 import { TagsBlock, Header, SEO } from 'components';
+import Img from 'gatsby-image';
 import '../styles/prism';
 
+const Hero = styled.div`
+  flex: 0 0 auto;
+  width: 45%;
+  max-width: 45%;
+  min-height: 40%; max-height: 40%;
+  padding-top: 6rem;
+  margin-right: 4%;
+  z-index: 0;
+  overflow: hidden;
+  @media (max-width: ${props => props.theme.breakpoints.m}) {
+    display: none;
+  }
+`;
 const SuggestionBar = styled.div`
   display: flex;
   flex-wrap: nowrap;
@@ -32,7 +46,6 @@ const PostSuggestionNext = styled.div`
   text-align:right;
 `;
 
-
 const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
   const post = data.markdownRemark;
@@ -50,11 +63,14 @@ const Post = ({ data, pageContext }) => {
         pathname={post.frontmatter.path}
         article
       />
-      <Header title={title} date={date} cover={image} url={url} />
+      <Header title={title} date={date} url={url} />
       <Container>
+        <Hero>
+          <Img fluid={image} />
+        </Hero>
         <Content input={html} />
-        <TagsBlock list={post.frontmatter.tags || []} />
       </Container>
+      <TagsBlock list={post.frontmatter.tags || []} />
       <SuggestionBar>
         <PostSuggestionPrev>
           {prev && (
@@ -101,7 +117,6 @@ export const query = graphql`
             fluid(
               maxWidth: 1920
               quality: 90
-              duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 60 }
             ) {
               ...GatsbyImageSharpFluid_withWebp
             }

@@ -4,7 +4,7 @@ cover: "./cover-dropbox.png"
 date: "2019-04-25"
 title: "Dropbox"
 published: true
-url: "https://www.dropbox.com/upgrade"
+url: "dropbox.com/upgrade"
 tags: ['SaaS', 'Cloud', 'Storage', 'Collaboration']
 ---
 # Put your creative energy to work, with Dropbox

@@ -4,7 +4,7 @@ cover: "./cover-intercom.png"
 date: "2019-04-25"
 title: "Intercom"
 published: true
-url: "https://www.intercom.com/pricing"
+url: "intercom.com/pricing"
 tags: ['SaaS', 'B2B', 'Communication', 'Chat']
 ---
 # A new and better way to acquire, engage and retain customers

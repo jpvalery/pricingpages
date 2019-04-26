@@ -4,7 +4,7 @@ cover: "./cover-github.png"
 date: "2019-04-25"
 title: "GitHub"
 published: true
-url: "https://www.github.com/pricing"
+url: "github.com/pricing"
 tags: ['SaaS', 'Cloud', 'Storage', 'Collaboration', 'Git', 'Dev']
 ---
 # Build better together

@@ -4,7 +4,7 @@ cover: "./cover-tunnelbear.png"
 date: "2019-04-25"
 title: "TunnelBear"
 published: true
-url: "https://www.tunnelbear.com/pricing"
+url: "tunnelbear.com/pricing"
 tags: ['VPN']
 ---
 # The fastest, simplest way to protect your online privacy

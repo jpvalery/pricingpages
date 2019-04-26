@@ -4,7 +4,7 @@ cover: "./cover-airtable.png"
 date: "2019-04-25"
 title: "Airtable"
 published: true
-url: "https://www.airtable.com/pricing"
+url: "airtable.com/pricing"
 tags: ['SaaS', 'Data', 'Collaboration']
 ---
 # Create, your way

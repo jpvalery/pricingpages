@@ -4,7 +4,7 @@ cover: "./cover-netflix.png"
 date: "2019-04-24"
 title: "Netflix"
 published: true
-url: "https://www.netflix.com/"
+url: "netflix.com/"
 tags: ['Video','Entertainment']
 ---
 # See what's next.

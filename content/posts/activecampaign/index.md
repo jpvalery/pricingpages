@@ -4,7 +4,7 @@ cover: "./cover-activecampaign.png"
 date: "2019-04-25"
 title: "ActiveCampaign"
 published: true
-url: "https://www.activecampaign.com/pricing"
+url: "activecampaign.com/pricing"
 tags: ['SaaS', 'Communications', 'Email']
 ---
 # Go beyond email marketing with true marketing automation

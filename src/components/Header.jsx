@@ -45,6 +45,9 @@ const Text = styled.div`
     text-decoration:underline;
     color: ${props => props.theme.colors.highlight};
   }
+  h4{
+    font-size: 0.9em;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -58,9 +61,8 @@ const Header = ({ children, title, date, cover, url }) => (
     <Img fluid={cover || {} || [] || ''} />
     <Text>
       <h1>{title}</h1>
-      <h3><a href={`${url}?utm_source=bestpricingpages&utm_medium=post&utm_campaign=${title}`} target="_blank">{url}</a></h3>
+      <h4><a href={`https://${url}?utm_source=bestpricingpages&utm_medium=post&utm_campaign=${title}`} target="_blank">{url}</a></h4>
       <h4>{date}</h4>
-
       {children && <Subtitle>{children}</Subtitle>}
     </Text>
   </Wrapper>

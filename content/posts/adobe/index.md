@@ -4,7 +4,7 @@ cover: "./cover-adobe.png"
 date: "2019-04-25"
 title: "Adobe"
 published: true
-url: "https://www.adobe.com/creativecloud/plans.html"
+url: "adobe.com/creativecloud/plans.html"
 tags: ['SaaS', 'Cloud', 'Storage', 'Collaboration','Creation']
 ---
 
