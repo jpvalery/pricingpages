@@ -30,7 +30,7 @@ const About = center => (
     <Header title="About BPP">A repository of the best pricing pages out there</Header>
     <Wrapper>
       <h3>About</h3>
-      Discussing with colleagues, we felt we could use a <a href="https://reallygoodemails.com/" target="_blank">ReallyGoodEmails</a> but for pricing page.<br />
+      Discussing with colleagues, we felt we could use a <a href="https://reallygoodemails.com/" target="_blank">ReallyGoodEmails</a> but for pricing pages.<br />
       So I decided to build it :). It's a work in progress and I'll update it based on feedback received and needs we'll identify.
     </Wrapper>
     <Wrapper>
@@ -39,10 +39,13 @@ const About = center => (
         <ul>
           <li><a href="http://github.com/henrymyers/">Henry Myers</a>: Wizardry to get the image on the post page</li>
         </ul>
+      <h3>Contributing</h3>
+      Wanna contribute to the content? <a href="https://jpvalery.typeform.com/to/anlh6W">Submit a page</a><br />
+      Wanna contribute to the code? Take a look to our current <a href="https://github.com/jpvalery/pricingpages/projects">projects</a> and <a href="https://github.com/jpvalery/pricingpages/issues">issues</a> on GitHub.
     </Wrapper>
     <Wrapper>
-      <h3>License</h3>
-      The code of the website is released under the <a href="https://github.com/jpvalery/pricingpages/blob/master/LICENSE" target="_blank">MIT License</a>.<br />
+      <h3>Licenses</h3>
+      The code of the website is released under the <a href="https://github.com/jpvalery/pricingpages/blob/master/LICENSE" target="_blank">MIT License</a> and can be found on <a href="https://github.com/jpvalery/pricingpages" target="_blank">GitHub.</a><br />
       The content of the website is released under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0 International License</a>.
       <br /><br /><br />
     </Wrapper>

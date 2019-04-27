@@ -44,6 +44,16 @@
 
 <p align="center"><em>Forked from <a href="https://github.com/justinformentin/gatsby-v2-tutorial-starter">gatsby-v2-tutorial-starter</a></em></p>
 
+## About
+
+Discussing with colleagues, we felt we could really use a [ReallyGoodEmails](https://reallygoodemails.com) but for pricing pages.
+So I decided to build it :) It's a work in progress and I'll update it based on feedback received and needs we'll identify.
+
+## Contributing
+
+Wanna contribute to the content? [Submit a page](https://jpvalery.typeform.com/to/anlh6W)
+
+Wanna contribute to the code? Take a look to our current [projects](https://github.com/jpvalery/pricingpages/projects) and [issues](https://github.com/jpvalery/pricingpages/issues) on GitHub.
 
 ## Features
 
