@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { Header } from 'components';
 import { Layout } from 'layouts';
+import { Link } from 'gatsby';
 
 const Wrapper = styled.section`
   margin: auto;
@@ -26,7 +27,7 @@ const Wrapper = styled.section`
 
 const About = center => (
   <Layout>
-    <Helmet title={'About BPP'} />
+    <Helmet title={'About us - BestPricingPages'} />
     <Header title="About BPP">A repository of the best pricing pages out there</Header>
     <Wrapper>
       <h3>About</h3>
@@ -44,10 +45,12 @@ const About = center => (
       Wanna contribute to the code? Take a look to our current <a href="https://github.com/jpvalery/pricingpages/projects">projects</a> and <a href="https://github.com/jpvalery/pricingpages/issues">issues</a> on GitHub.
     </Wrapper>
     <Wrapper>
-      <h3>Licenses</h3>
+      <h3>Licenses & Legal</h3>
       The code of the website is released under the <a href="https://github.com/jpvalery/pricingpages/blob/master/LICENSE" target="_blank">MIT License</a> and can be found on <a href="https://github.com/jpvalery/pricingpages" target="_blank">GitHub.</a><br />
       The content of the website is released under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0 International License</a>.
-      <br /><br /><br />
+      <br /><br />
+      You can consult our <Link to="/terms">Terms</Link> and our <Link to="/privacy">Privacy Policy</Link>.
+      <br /><br /><br /><br />
     </Wrapper>
   </Layout>
 );

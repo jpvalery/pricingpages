@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { Link } from 'gatsby';
 
 const Wrapper = styled.footer`
   position: relative;
@@ -17,7 +18,7 @@ const Wrapper = styled.footer`
 
 const Text = styled.div`
   margin: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
   text-align: center;
   color: ${props => props.theme.colors.white.light};
   span {
@@ -26,6 +27,22 @@ const Text = styled.div`
   a {
     text-decoration:none !important;
     color: ${props => props.theme.colors.white.light};
+  }
+`;
+
+const Legal = styled.div`
+  margin: 0;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: ${props => props.theme.colors.white.grey};
+  a {
+    text-decoration:none !important;
+    color: ${props => props.theme.colors.white.light};
+  }
+  a:hover {
+    text-decoration:none !important;
+    color: ${props => props.theme.colors.highlight};
   }
 `;
 
@@ -38,6 +55,9 @@ const Footer = () => (
       <br />
       <a href="https://jpvalery.me">Curated by @jpvalery</a> - 2019
     </Text>
+    <Legal>
+      2019 - <Link to="/terms">Terms</Link> & <Link to="/privacy">Privacy Policy</Link>
+    </Legal>
   </Wrapper>
 );
 export default Footer;
