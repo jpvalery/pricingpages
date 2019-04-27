@@ -26,15 +26,15 @@ const Button = styled.div`
   margin-bottom: 3rem;
   a {
     margin: 0.8rem;
-    color: ${props => props.theme.colors.black.blue};
+    color: ${props => props.theme.colors.white.light};
     padding: 0.5rem 4rem;
-    background: ${props => props.theme.colors.white.grey};
-    border-radius: 10px;
+    background: #137991;
+    border-radius: 8px;
     font-weight:600;
     font-size: 1.2rem;
     &:hover {
-      color: ${props => props.theme.colors.white.light};
-      background: ${props => props.theme.colors.primary.light};
+      background: ${props => props.theme.colors.background.dark};
+      color: ${props => props.theme.colors.highlight};
       border: ${props => props.theme.colors.primary.light};
     }
 `;
