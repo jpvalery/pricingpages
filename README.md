@@ -31,12 +31,13 @@
       alt="styled with prettier"
     />
   </a>
-  <a href="https://www.netlify.com">
+  <a href="https://app.netlify.com/sites/pricingpages/deploys">
     <img
-      src="https://img.shields.io/badge/deploys%20by-netlify-00c7b7.svg"
-      alt="deploys by netlify"
+      src="https://api.netlify.com/api/v1/badges/a9b958d6-b5b3-4204-8990-5cac9dd82348/deploy-status"
+      alt="Netlify"
     />
   </a>
+
 </p>
 
 <img width="1920" alt="image" src="https://user-images.githubusercontent.com/4112343/56843560-43861f80-6870-11e9-8522-c5fad8f563fa.png">

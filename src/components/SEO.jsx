@@ -84,6 +84,7 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
             <html lang={siteLanguage} />
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
+            <meta name="keywords" content="bpp,best,pricing,pages,repository,RGE,jpvalery" />
             <meta name="apple-mobile-web-app-title" content={shortName} />
             <meta name="application-name" content={shortName} />
             <script type="application/ld+json">
