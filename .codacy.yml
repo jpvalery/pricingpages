@@ -1,5 +1,5 @@
 ---
 exclude_paths:
   - 'content/**/*'
-  - 'README.MD'
+  - 'README.md'
   - 'LICENSE'
