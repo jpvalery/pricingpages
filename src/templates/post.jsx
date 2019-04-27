@@ -12,14 +12,23 @@ const Hero = styled.div`
   width: 45%;
   max-width: 45%;
   min-height: 40%; max-height: 40%;
-  padding-top: 6rem;
   margin-right: 4%;
   z-index: 0;
   overflow: hidden;
+  border-radius: ${props => props.theme.borderRadius.default};
+  box-shadow: ${props => props.theme.shadow.feature.small.default};
+  transition: ${props => props.theme.transitions.boom.transition};
+    &:hover {
+      box-shadow: ${props => props.theme.shadow.feature.small.hover};
+      transform: scale(1.02);
+    }
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     display: none;
   }
 `;
+const StyledImg = styled(Img)`
+  min-height:100%;
+`
 const SuggestionBar = styled.div`
   display: flex;
   flex-wrap: nowrap;
@@ -66,7 +75,7 @@ const Post = ({ data, pageContext }) => {
       <Header title={title} date={date} url={url} />
       <Container>
         <Hero>
-          <Img fluid={image} />
+          <a href={`https://${url}?utm_source=bestpricingpages&utm_medium=post_img&utm_campaign=${title}`} target="_blank"><StyledImg fluid={image} alt={`${title} - BestPricingPages`} /></a>
         </Hero>
         <Content input={html} />
       </Container>
