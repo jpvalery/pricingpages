@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
   title: 'BestPricingPages', // Navigation and Site Title
   titleAlt: 'BestPricingPages', // Title for JSONLD
-  description: 'A repository of the best pricing pages out there. Curated by @jpvalery',
+  description: 'A repository of the best pricing pages by the best companies. Curated by @jpvalery',
   url: 'https://bestpricingpages.com', // Domain of your site. No trailing slash!
   siteUrl: 'https://bestpricingpages.com', // url + pathPrefix
   siteLanguage: 'en', // Language Tag on <html> element

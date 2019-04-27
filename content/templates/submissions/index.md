@@ -5,7 +5,7 @@ date: "2019-04-25"
 title: "Name"
 published: false
 url: "name.com/pricing"
-tags: ['Pricing','']
+tags: ['📥 Submissions','']
 ---
 _[description]_
 
