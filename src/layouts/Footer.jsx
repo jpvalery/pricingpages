@@ -53,7 +53,7 @@ const Footer = () => (
         BestPricingPages.com - A repository of the best pricing pages
       </span>
       <br />
-      <a href="https://jpvalery.me">Curated by @jpvalery</a> - 2019
+      <a href="https://jpvalery.me?utm_source=bestpricingpages&utm_medium=footer">Curated by @jpvalery</a> - 2019
     </Text>
     <Legal>
       2019 - <Link to="/terms">Terms</Link> & <Link to="/privacy">Privacy Policy</Link>
