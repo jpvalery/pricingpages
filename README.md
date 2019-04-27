@@ -1,32 +1,20 @@
 # BestPricingPages.com
 
-_Forked from [gatsby-v2-tutorial-starter](https://github.com/justinformentin/gatsby-v2-tutorial-starter)_
-
+<p align="center">_Forked from [gatsby-v2-tutorial-starter](https://github.com/justinformentin/gatsby-v2-tutorial-starter)_</p>
 <p align="center">
-  <a href="https://codeclimate.com/github/jpvalery/pricingpages">
-    <img
-      src="https://codeclimate.com/github/jpvalery/pricingpages/badges/gpa.svg"
-      alt="Maintainability"
-    />
-  </a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/496fd89712b33a3bf57a/maintainability)](https://codeclimate.com/github/jpvalery/pricingpages/maintainability)
+
   <a href="https://codeclimate.com/github/jpvalery/pricingpages">
     <img
       src="https://codeclimate.com/github/jpvalery/pricingpages/badges/issue_count.svg"
       alt="Issues"
     />
   </a>
-  <a href="https://www.codacy.com/app/jpvalery/pricingpages?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jpvalery/pricingpagesr&amp;utm_campaign=Badge_Grade">
-    <img
-      src="https://api.codacy.com/project/badge/Grade/c910ab2b18a24dde80cfc05b73c908aa"
-      alt="Code Quality"
-    />
-  </a>
-  <a href="https://david-dm.org/jpvalery/pricingpages">
-    <img
-      src="https://img.shields.io/david/justinformentin/gatsby-v2-tutorial-starter.svg"
-      alt="Dependencies"
-    />
-  </a>
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/84b0b8391a864873b7784615216829fc)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jpvalery/pricingpages&amp;utm_campaign=Badge_Grade)
+
+[![dependencies Status](https://david-dm.org/jpvalery/pricingpages/status.svg)](https://david-dm.org/jpvalery/pricingpages)
+
   <a href="https://github.com/prettier/prettier">
     <img
       src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg"
