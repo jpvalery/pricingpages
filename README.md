@@ -38,6 +38,9 @@
     />
   </a>
 </p>
+
+<img width="1920" alt="image" src="https://user-images.githubusercontent.com/4112343/56843560-43861f80-6870-11e9-8522-c5fad8f563fa.png">
+
 <p align="center"><em>Forked from <a href="https://github.com/justinformentin/gatsby-v2-tutorial-starter">gatsby-v2-tutorial-starter</a></em></p>
 
 
