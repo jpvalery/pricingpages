@@ -1,7 +1,7 @@
 ---
 path: "/zeit"
 cover: "./cover-zeit.png"
-date: "2019-04-25"
+date: "2019-04-24"
 title: "ZEIT"
 published: true
 url: "zeit.co/pricing"
