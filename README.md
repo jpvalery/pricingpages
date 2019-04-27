@@ -58,10 +58,9 @@ Wanna contribute to the code? Take a look to our current [projects](https://gith
 ## Features
 
 - Gatsby v2
-- Advanced Sitemap
 - Tags
 - SEO
-  - Sitemap generation
+  - Advanced Sitemap generation
   - Schema.org JSON-LD for Google Rich Snippets
   - Twitter Tags
   - OpenGraph Tags for Facebook/Google+/Pinterest
