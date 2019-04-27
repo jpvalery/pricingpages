@@ -25,7 +25,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'BestPricingPages.com - Best pricing pages by the best companies'} />
-      <Header title="Pricing Pages Done Right"></Header>
+      <Header title="Pricing Pages Done Right.">A curated repository of the best pricing pages by the best companies</Header>
       <PostWrapper>
         {edges.map(({ node }) => (
           <PostList
