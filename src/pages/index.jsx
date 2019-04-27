@@ -5,19 +5,38 @@ import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
 import { Header, PostList } from 'components';
 import { Layout } from 'layouts';
+import { Link } from 'gatsby';
 
 const PostWrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 4rem;
+  margin: 4rem 4rem 1rem 4rem;
   @media (max-width: 1000px) {
     margin: 4rem 2rem 1rem 2rem;
   }
   @media (max-width: 700px) {
     margin: 4rem 1rem 1rem 1rem;
   }
+`;
+
+const Button = styled.div`
+  text-align: center;
+  margin-bottom: 3rem;
+  a {
+    margin: 0.8rem;
+    color: ${props => props.theme.colors.black.blue};
+    padding: 0.5rem 4rem;
+    background: ${props => props.theme.colors.white.grey};
+    border-radius: 10px;
+    font-weight:600;
+    font-size: 1.2rem;
+    &:hover {
+      color: ${props => props.theme.colors.white.light};
+      background: ${props => props.theme.colors.primary.light};
+      border: ${props => props.theme.colors.primary.light};
+    }
 `;
 
 const Index = ({ data }) => {
@@ -38,6 +57,7 @@ const Index = ({ data }) => {
           />
         ))}
       </PostWrapper>
+    <Button><Link to="/tags">Browse all pages</Link></Button>
     </Layout>
   );
 };
@@ -68,6 +88,7 @@ Index.propTypes = {
 export const query = graphql`
   query {
     allMarkdownRemark(
+      limit: 16
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
