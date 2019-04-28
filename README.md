@@ -40,7 +40,7 @@
 
 </p>
 
-<img width="1920" alt="image" src="https://user-images.githubusercontent.com/4112343/56843560-43861f80-6870-11e9-8522-c5fad8f563fa.png">
+<img width="1920" alt="BPP Preview" src="https://user-images.githubusercontent.com/4112343/56858586-6258e480-694a-11e9-9a17-9217f6d50c1d.jpg">
 
 <p align="center"><em>Forked from <a href="https://github.com/justinformentin/gatsby-v2-tutorial-starter">gatsby-v2-tutorial-starter</a></em></p>
 
