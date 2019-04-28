@@ -8,7 +8,7 @@ import { Link } from 'gatsby';
 
 const Wrapper = styled.section`
   margin: auto;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0;
   width: 50%;
   max-width: ${props => props.theme.layout[props.type]};
   height: 100%;
