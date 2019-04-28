@@ -11,7 +11,7 @@ import config from '../../config/site';
 
 const StyledLink = styled(Link)`
   color: ${props => props.theme.colors.white.light};
-  padding: 5px 10px;
+  padding: 10px 25px;
   border: solid 1px #fff;
   border-radius: 20px;
   &:hover {
@@ -22,6 +22,11 @@ const StyledLink = styled(Link)`
 
 const Information = styled.div`
   text-align: center;
+  margin: 1rem auto;
+  height: calc(100vh - 518px) !important;
+  @media (max-width: ${props => props.theme.breakpoints.s}) {
+    height: calc(100vh - 455px) !important;;
+  }
   h1 {
     font-size: 2rem;
     margin-bottom: 1.25rem;

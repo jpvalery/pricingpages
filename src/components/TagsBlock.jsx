@@ -9,13 +9,17 @@ const TagsContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  @media (min-width: ${props => props.theme.breakpoints.m}) {
+      padding-bottom: calc(100vh - 660px) !important;
+  }
   a {
     margin: 0.8rem;
     color: ${props => props.theme.colors.black.blue};
     padding: 0.5rem 1.2rem;
     background: ${props => props.theme.colors.white.grey};
     border-radius: 10px;
-    font-weight:600;
+    font-weight: 600;
+    font-size: 1em;
     &:hover {
       color: ${props => props.theme.colors.white.light};
       background: ${props => props.theme.colors.primary.light};
