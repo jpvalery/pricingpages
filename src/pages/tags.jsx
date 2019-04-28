@@ -17,7 +17,7 @@ const Categories = styled.section`
     flex: 1;
     display: flex;
     @media (min-width: ${props => props.theme.breakpoints.m}) {
-    padding-bottom: calc(100vh - 660px) !important;
+    padding-bottom: calc(100vh - 632px) !important;
     }
 
     @media (max-width: ${props => props.theme.breakpoints.m}) {
