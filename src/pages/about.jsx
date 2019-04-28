@@ -50,7 +50,7 @@ const About = center => (
       The content of the website is released under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0 International License</a>.
       <br /><br />
       You can consult our <Link to="/terms">Terms</Link> and our <Link to="/privacy">Privacy Policy</Link>.
-      <br /><br /><br /><br />
+      <br /><br /><br /><br /><br />
     </Wrapper>
   </Layout>
 );

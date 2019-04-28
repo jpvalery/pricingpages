@@ -11,20 +11,19 @@ const Wrapper = styled.header`
     clip-path: polygon(100% 0, 0 0, 0 90%, 50% 100%, 100% 90%);
   }
   background: ${props => props.theme.gradient.rightToLeft};
-  height: 275px;
+  height: 300px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
-    height: 275px;
+    height: 325px;
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
-    height: 250px;
+    height: 450px;
   }
   position: relative;
-  overflow: hidden;
 `;
 
 const Text = styled.div`
   color: ${props => props.theme.colors.white.base};
-  z-index: 0;
+  z-index: 999;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,7 +34,7 @@ const Text = styled.div`
   width: 100%;
   max-width: ${props => props.theme.layout.base};
   padding: 0;
-  margin: 1.2rem auto;
+  margin: 1.2rem auto 2rem;
   align-items: center;
   a {
     text-decoration:none;
@@ -52,7 +51,7 @@ const Text = styled.div`
 
 const Subtitle = styled.p`
   max-width: 600px;
-  margin: -2rem 2rem 0 2rem;
+  margin: 0 2rem 0 2rem;
   color: ${props => props.theme.colors.white.light};
 `;
 
@@ -61,8 +60,8 @@ const Header = ({ children, title, date, cover, url }) => (
     <Img fluid={cover || {} || [] || ''} />
     <Text>
       <h1>{title}</h1>
-      <h4><a href={`https://${url}?utm_source=bestpricingpages&utm_medium=post&utm_campaign=${title}`} target="_blank">{url}</a></h4>
-      <h4>{date}</h4>
+      {url && <h3><a href={`https://${url}?utm_source=bestpricingpages&utm_medium=post&utm_campaign=${title}`} target="_blank">{url}</a></h3>}
+      {date && <h4>{date}</h4>}
       {children && <Subtitle>{children}</Subtitle>}
     </Text>
   </Wrapper>

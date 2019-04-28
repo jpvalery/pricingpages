@@ -63,8 +63,8 @@ const StyledLink = styled(Link)`
       to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.3) 50%,
-      rgba(0, 0, 0, 0.7) 80%,
-      rgba(0, 0, 0, 0.8) 100%
+      rgba(0, 0, 0, 0.6) 75%,
+      rgba(0, 0, 0, 0.75) 100%
     );
     z-index: -10;
     border-radius: ${theme.borderRadius.default};

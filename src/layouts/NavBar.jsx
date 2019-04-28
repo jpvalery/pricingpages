@@ -16,11 +16,12 @@ const StyledLink = styled(Link)`
 const Nav = styled.nav`
   display: flex;
   justify-content: flex-end;
-  font-family: ${props => props.theme.fontFamily.body};
-  font-weight: 500;
+  font-family: ${props => props.theme.fontFamily.header};
+  font-weight: 600;
   font-size: 1.1rem;
   align-items: center;
   margin-bottom: 1rem;
+  margin-right: 0.75rem;
   a {
     color: ${props => props.theme.colors.white.base};
     margin-left: 1.8rem;
