@@ -9,9 +9,6 @@ const TagsContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  @media (min-width: ${props => props.theme.breakpoints.m}) {
-      padding-bottom: calc(100vh - 660px) !important;
-  }
   a {
     margin: 0.8rem;
     color: ${props => props.theme.colors.black.blue};
