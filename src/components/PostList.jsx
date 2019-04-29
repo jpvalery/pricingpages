@@ -8,6 +8,7 @@ import theme from '../../config/theme';
 const Wrapper = styled.article`
   margin-bottom: 2rem;
   position: relative;
+  overflow: hidden;
   z-index: 100;
   border-radius: ${props => props.theme.borderRadius.default};
   box-shadow: ${props => props.theme.shadow.feature.small.default};
@@ -75,12 +76,11 @@ const StyledLink = styled(Link)`
 const Image = styled.div`
   position: absolute;
   top: 0;
-  overflow: hidden;
   right: 0;
   left: 0;
-  bottom: 0;
   z-index: 1;
   object-fit: cover;
+  overflow: hidden;
   border-radius: ${props => props.theme.borderRadius.default};
   img {
     border-radius: ${props => props.theme.borderRadius.default};
