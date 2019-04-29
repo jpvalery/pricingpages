@@ -31,22 +31,23 @@ const About = center => (
     <Header title="About BPP">A repository of the best pricing pages out there</Header>
     <Wrapper>
       <h3>About</h3>
-      Discussing with colleagues, we felt we could use a <a href="https://reallygoodemails.com/" target="_blank">ReallyGoodEmails</a> but for pricing pages.<br />
+      Discussing with colleagues, we felt we could use a <a href="https://reallygoodemails.com/?utm_source=bestpricingpages&utm_medium=about" target="_blank">ReallyGoodEmails</a> but for pricing pages.<br />
       So I decided to build it :). It's a work in progress and I'll update it based on feedback received and needs we'll identify.
     </Wrapper>
     <Wrapper>
       <h3>Contributors</h3>
       This project wouldn't be here without the help of the following people:<br />
         <ul>
-          <li><a href="http://github.com/henrymyers/">Henry Myers</a>: Wizardry to get the image on the post page</li>
+          <li><a href="http://github.com/justinformentin/?utm_source=bestpricingpages&utm_medium=about">Justin Formentin</a>: wrote the original Gatsby starter upon which this site is based</li>
+          <li><a href="http://github.com/henrymyers/?utm_source=bestpricingpages&utm_medium=about">Henry Myers</a>: Wizardry to get the image on the post page</li>
         </ul>
       <h3>Contributing</h3>
       Wanna contribute to the content? <a href="https://jpvalery.typeform.com/to/anlh6W">Submit a page</a><br />
-      Wanna contribute to the code? Take a look to our current <a href="https://github.com/jpvalery/pricingpages/projects">projects</a> and <a href="https://github.com/jpvalery/pricingpages/issues">issues</a> on GitHub.
+      Wanna contribute to the code? Take a look to our current <a href="https://github.com/jpvalery/pricingpages/projects?utm_source=bestpricingpages&utm_medium=about">projects</a> and <a href="https://github.com/jpvalery/pricingpages/issues?utm_source=bestpricingpages&utm_medium=about">issues</a> on GitHub.
     </Wrapper>
     <Wrapper>
       <h3>Licenses & Legal</h3>
-      The code of the website is released under the <a href="https://github.com/jpvalery/pricingpages/blob/master/LICENSE" target="_blank">MIT License</a> and can be found on <a href="https://github.com/jpvalery/pricingpages" target="_blank">GitHub.</a><br />
+      The code of the website is released under the <a href="https://github.com/jpvalery/pricingpages/blob/master/LICENSE?utm_source=bestpricingpages&utm_medium=about" target="_blank">MIT License</a> and can be found on <a href="https://github.com/jpvalery/pricingpages?utm_source=bestpricingpages&utm_medium=about" target="_blank">GitHub.</a><br />
       The content of the website is released under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0 International License</a>.
       <br /><br />
       You can consult our <Link to="/terms">Terms</Link> and our <Link to="/privacy">Privacy Policy</Link>.
