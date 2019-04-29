@@ -82,7 +82,7 @@ const Privacy = center => (
     <h2>CHANGES</h2>
     We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons.<br /><br />
     <h2>CONTACT US</h2>
-    For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at privacy@bestpricingpages.com or by mail using the details provided below:<br />
+    For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at privacy(a)bestpricingpages.com.<br />
 <br /><br /><br />
     </Wrapper>
   </Layout>
