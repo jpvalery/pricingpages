@@ -37,7 +37,9 @@
       alt="Netlify"
     />
   </a>
-
+  <br />
+<a href="https://www.producthunt.com/posts/bestpricingpages-com?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bestpricingpages-com" target="_blank">
+<img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=152697&theme=light" alt="BestPricingPages.com - Pricing Pages Done Right | Product Hunt Embed"></a>
 </p>
 
 <img width="1920" alt="BPP Preview" src="https://user-images.githubusercontent.com/4112343/56866088-885ea300-69a3-11e9-9553-1018ac16c86e.png">
