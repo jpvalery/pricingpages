@@ -19,4 +19,4 @@ Try it free for 30 days.
 **Play any song**. Even on mobile.
 **Unlimited skips**. Just hit next.
 
-### Listen free or subscribe to Spotify Premium.
+### Listen free or subscribe to Spotify Premium
