@@ -19,14 +19,14 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 750,
-              quality: 90,
-              linkImagesToOriginal: true,
-            },
-          },
+        // {
+        //    resolve: 'gatsby-remark-images',
+        //    options: {
+        //      maxWidth: 750,
+        //      quality: 90,
+        //      linkImagesToOriginal: true,
+        //    },
+        //  },
           'gatsby-remark-prismjs',
         ],
       },
@@ -45,7 +45,7 @@ module.exports = {
         pathToConfigModule: 'config/typography.js',
       },
     },
-    'gatsby-plugin-sharp',
+    // 'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
