@@ -14,7 +14,7 @@ module.exports = {
         path: `${__dirname}/content/posts`,
       },
     },
-    // 'gatsby-transformer-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -45,7 +45,14 @@ module.exports = {
         pathToConfigModule: 'config/typography.js',
       },
     },
-    // 'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        stripMetadata: true,
+        defaultQuality: 80,
+        srcSetBreakpoints: [ 720, 1280, 1920 ],
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
