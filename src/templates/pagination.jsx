@@ -21,26 +21,40 @@ const PostWrapper = styled.div`
   }
 `;
 
-const Button = styled.div`
-  text-align: center;
-  margin-bottom: 3rem;
+const SuggestionBar = styled.div`
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background: ${props => props.theme.colors.white.grey};
+  box-shadow: ${props => props.theme.shadow.suggestion};
   a {
-    margin: 0.8rem;
-    color: ${props => props.theme.colors.white.light};
-    padding: 0.5rem 4rem;
-    background: #137991;
-    border-radius: 8px;
-    font-weight:600;
-    font-size: 1.2rem;
-    &:hover {
-      background: ${props => props.theme.colors.background.dark};
-      color: ${props => props.theme.colors.highlight};
-      border: ${props => props.theme.colors.primary.light};
-    }
+    color: ${props => props.theme.colors.black.base};
+  }
+  h3{
+    color: ${props => props.theme.colors.black.blue};
+  }
+`;
+const PostSuggestionPrev = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 1rem 3rem 0 3rem;
+  text-align:left;
+`;
+const PostSuggestionNext = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 1rem 3rem 0 3rem;
+  text-align:right;
 `;
 
-
-const Index = ({ data }) => {
+const Pagination = ({ data, pageContext }) => {
+  const { currentPage, numPages } = pageContext;
+    const isFirst = currentPage === 1
+    const isLast = currentPage === numPages
+    const prevPage = currentPage - 1 === 1 ? "1" : (currentPage - 1).toString()
+    const nextPage = (currentPage + 1).toString()
+    const prevLink = prevPage === "1" ? "/" : "/page/".concat(prevPage)
+    const nextLink = "/page/".concat(nextPage)
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
@@ -60,14 +74,31 @@ const Index = ({ data }) => {
           />
         ))}
       </PostWrapper>
-    <Button><Link to="/page/2">More Pricing Pages</Link></Button>
+      <SuggestionBar>
+        <PostSuggestionPrev>
+        {!isFirst && (
+            <Link to={prevLink}>
+              ⬅️ Previous
+              <h3>Page {prevPage}</h3>
+            </Link>
+        )}
+        </PostSuggestionPrev>
+        <PostSuggestionNext>
+          {!isLast && (
+            <Link to={nextLink}>
+              Next ➡️
+              <h3>Page {nextPage}</h3>
+            </Link>
+          )}
+        </PostSuggestionNext>
+      </SuggestionBar>
     </Layout>
   );
 };
 
-export default Index;
+export default Pagination;
 
-Index.propTypes = {
+Pagination.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.arrayOf(
@@ -88,12 +119,13 @@ Index.propTypes = {
   }),
 };
 
-export const query = graphql`
-  query {
-    allMarkdownRemark(
-      limit: 16
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
+export const paginationQuery = graphql`
+  query paginationQuery($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(sort: {
+          fields: [frontmatter___date],
+          order: DESC
+        }
+        limit: $limit skip: $skip) {
       edges {
         node {
           id
@@ -106,10 +138,11 @@ export const query = graphql`
             cover {
               childImageSharp {
                 fluid(
-                  maxWidth: 1920
-                  quality: 80
+                  maxWidth: 1000
+                  quality: 90
+                  traceSVG: { color: "#2B2B2F" }
                 ) {
-                  ...GatsbyImageSharpFluid_withWebp
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }
             }
