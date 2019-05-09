@@ -21,6 +21,25 @@ const PostWrapper = styled.div`
   }
 `;
 
+const Button = styled.div`
+  text-align: center;
+  margin-bottom: 3rem;
+  a {
+    margin: 0.8rem;
+    color: ${props => props.theme.colors.white.light};
+    padding: 0.5rem 4rem;
+    background: #137991;
+    border-radius: 8px;
+    font-weight:600;
+    font-size: 1.2rem;
+    &:hover {
+      background: ${props => props.theme.colors.background.dark};
+      color: ${props => props.theme.colors.highlight};
+      border: ${props => props.theme.colors.primary.light};
+    }
+`;
+
+
 const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
@@ -41,6 +60,7 @@ const Index = ({ data }) => {
           />
         ))}
       </PostWrapper>
+    <Button><Link to="/page/2">More Pricing Pages</Link></Button>
     </Layout>
   );
 };
