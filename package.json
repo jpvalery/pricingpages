@@ -52,10 +52,10 @@
     "react-dom": "16.8.1",
     "react-headroom": "2.2.4",
     "react-helmet": "5.2.0",
-    "react-typography": "0.16.18",
+    "react-typography": "0.16.19",
     "typeface-candal": "0.0.54",
     "typeface-open-sans": "0.0.54",
-    "typography": "0.16.18"
+    "typography": "0.16.19"
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",
