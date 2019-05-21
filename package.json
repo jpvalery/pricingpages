@@ -22,7 +22,7 @@
     "start": "npm run develop"
   },
   "dependencies": {
-    "@babel/core": "7.4.4",
+    "@babel/core": "7.4.5",
     "@emotion/core": "10.0.10",
     "@emotion/styled": "10.0.11",
     "babel-plugin-emotion": "10.0.9",
