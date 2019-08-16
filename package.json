@@ -23,9 +23,9 @@
   },
   "dependencies": {
     "@babel/core": "7.5.5",
-    "@emotion/core": "10.0.15",
+    "@emotion/core": "10.0.16",
     "@emotion/styled": "10.0.15",
-    "babel-plugin-emotion": "10.0.15",
+    "babel-plugin-emotion": "10.0.16",
     "emotion-theming": "10.0.14",
     "gatsby": "2.13.66",
     "gatsby-image": "2.2.8",
