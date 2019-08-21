@@ -89,5 +89,6 @@ module.exports = {
     respectDNT: true,
           },
     },
+    `gatsby-plugin-remove-fingerprints`,
   ],
 };
