@@ -26,7 +26,7 @@
     "@emotion/core": "10.0.17",
     "@emotion/styled": "10.0.17",
     "babel-plugin-emotion": "10.0.17",
-    "emotion-theming": "10.0.17",
+    "emotion-theming": "10.0.18",
     "gatsby": "2.15.15",
     "gatsby-image": "2.2.19",
     "gatsby-plugin-advanced-sitemap": "1.4.1",
