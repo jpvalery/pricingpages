@@ -5,7 +5,7 @@ date: "2019-04-28"
 title: "Discord"
 published: true
 url: "discordapp.com/nitro"
-tags: ['Communications','Video Games','Gaming','Chat']
+tags: ['Communications','VideoGames','Gaming','Chat']
 ---
 # Discord nitro
 Unlimited access to a growing library of critically acclaimed games that we think you and your friends should play.
