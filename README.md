@@ -45,6 +45,7 @@
 <img width="1920" alt="BPP Preview" src="https://user-images.githubusercontent.com/4112343/56866088-885ea300-69a3-11e9-9553-1018ac16c86e.png">
 
 <p align="center"><em>Forked from <a href="https://github.com/justinformentin/gatsby-v2-tutorial-starter">gatsby-v2-tutorial-starter</a></em></p>
+<p align="center"><em>Dependencies unmaintained since June 9th 2020</em></p>
 
 ## About
 
