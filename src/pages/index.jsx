@@ -45,7 +45,8 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'BestPricingPages.com - Best pricing pages by the best companies'} />
-      <Header title="Pricing Pages Done Right.">A curated repository of the best pricing pages by the best companies<br /><br />
+      <Header title="Pricing Pages Done Right.">A curated repository of the best pricing pages by the best companies<br />
+          [Unmaintained as of 2020]<br />
         <a href="https://www.producthunt.com/posts/bestpricingpages-com?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bestpricingpages-com" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=152697&theme=light" alt="Product Hunt Embed" width="250px" height="54px" /></a>
       </Header>
       <PostWrapper>
